@@ -1,0 +1,3 @@
+module frontend {
+	requires jssc;
+}
