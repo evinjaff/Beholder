@@ -21,7 +21,7 @@ char toUpper(char c) {
 void setup() {
   Serial.begin(9600);
   pinMode(led, OUTPUT);
-  analogReference(INTERNAL);
+  analogReference(DEFAULT);
 }
 
 
@@ -50,12 +50,12 @@ void convertIncomingCharsToMorseCode() {
 //    }
 
     //debug signal
-    //Serial.println(analogRead(ANALOG_PIN));
+    Serial.println(analogRead(ANALOG_PIN));
 
-    //The Jaff handshake protocol lol
-    Serial.print('s');
-    Serial.print(analogRead(ANALOG_PIN));
-    Serial.print('e');
+//    //The Jaff handshake protocol lol
+//    Serial.print('s');
+//    Serial.print(analogRead(ANALOG_PIN));
+//    Serial.print('e');
 
 
 //    int test = 45;
