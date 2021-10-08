@@ -215,7 +215,7 @@ public class SerialComm {
 					StdDraw.clear();
 					
 					
-					StdDraw.filledCircle(0.5, 0.5, (data / 2000.0));
+					StdDraw.filledCircle((data / 1000.0), 0.5, 0.2);
 					
 					StdDraw.pause(20);
 					
